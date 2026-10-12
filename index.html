@@ -1,0 +1,64 @@
+---
+layout: default
+body_class: home
+---
+{%- assign thesis = site.pages | where: "name", "thesis.md" | first -%}
+{%- assign repo = site.github.repository_nwo | default: site.github_repo -%}
+<section class="page-head" aria-label="Our thesis">
+  <p class="stamp">Thesis v{{ thesis.version }}, {{ thesis.version_date }}. <a href="{{ '/thesis/' | relative_url }}">Read it</a> or <a href="https://github.com/{{ repo }}/commits/main/{{ thesis.path }}">see what changed</a>.</p>
+  <h1 class="thesis-line">AI will finish what software started.</h1>
+  <div class="argument">
+    <p><strong>Software made the information economy machine-readable.</strong> Media, finance and commerce moved onto computers because their work was already information.</p>
+    <p><strong>The physical economy stayed behind.</strong> Farms, grids, factories, supply chains and oceans run on data that is messy, fragmented, regulated, local and full of tacit expertise. Software could record their transactions. It could not read their operations.</p>
+    <p><strong>AI can.</strong> Models turn satellite imagery, grid telemetry and field records into maps, forecasts and decisions inside the systems operators already use.</p>
+  </div>
+  <p class="statement">{{ site.description }}</p>
+  <div class="terms">
+    <dl class="terms-list">
+      {%- for t in site.data.terms.summary %}
+      <div><dt>{{ t.label }}</dt><dd>{{ t.value }}</dd></div>
+      {%- endfor %}
+    </dl>
+    <p class="terms-cta"><a class="link-arrow" href="{{ '/founders/' | relative_url }}">Pitch us →</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="where-we-invest">
+  <div class="section-head">
+    <h2 id="where-we-invest">Where we invest</h2>
+    <p>Companies appear under every sector they work in.</p>
+  </div>
+  <div class="index-head" aria-hidden="true"><div>Sector</div><div>Companies</div><div>Latest writing</div></div>
+  <div class="index">
+    {%- for s in site.data.sectors %}
+    {%- assign cos = site.data.companies | where_exp: "c", "c.sectors contains s.id" %}
+    {%- assign essays = site.data.writing | where_exp: "w", "w.sectors contains s.id" | sort: "date" | reverse %}
+    {%- assign essay = essays | first %}
+    <div class="index-row">
+      <div class="sector"><a class="sector-name" href="{{ '/portfolio/' | relative_url }}#{{ s.id }}">{{ s.name | escape }}</a><div class="sector-desc">{{ s.description }}</div></div>
+      <div class="companies">
+        {%- for c in cos %}<a href="{{ '/portfolio/' | relative_url }}#{{ c.id }}">{{ c.name | escape }}</a>{% endfor -%}
+      </div>
+      <div class="latest">
+        {%- if essay %}
+        <a href="{{ essay.url }}">{{ essay.title | escape }}</a><div class="meta">{{ essay.date | date: "%b %-d, %Y" }}</div>
+        {%- else %}
+        {%- assign notes = site.notes | where_exp: "n", "n.sectors contains s.id" | sort: "date" | reverse %}
+        {%- assign note = notes | first %}
+        {%- if note %}
+        <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a><div class="meta">{{ note.date | date: "%b %-d, %Y" }}</div>
+        {%- endif %}
+        {%- endif %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+  <div class="more-links">
+    <a href="{{ '/portfolio/' | relative_url }}">All companies →</a>
+    <a href="{{ '/writing/' | relative_url }}">All writing →</a>
+  </div>
+</section>
+
+<section class="subscribe">
+  <p>We publish essays on the physical economy on Substack. <a class="link-arrow" href="{{ site.substack_url }}">Subscribe →</a></p>
+</section>

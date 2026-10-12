@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article>
+  <div class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.lede %}
+    <p class="lede">{{ page.lede }}</p>
+    {%- endif %}
+  </div>
+  <div class="prose {{ page.prose_class }}">
+{{ content }}
+  </div>
+</article>

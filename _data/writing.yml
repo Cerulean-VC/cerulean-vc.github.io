@@ -1,0 +1,104 @@
+# Essays on Substack, newest first.
+# sectors: ids from sectors.yml. The home page shows the newest essay for each sector.
+
+- title: Open Source (AI) Strategy For The Physical Economy
+  url: https://ceruleanventures.substack.com/p/open-source-ai-strategy-for-the-physical
+  date: 2026-08-12
+  dek: Why maps, identifiers, evals, and methods will become commons, while workflows, data rights, and trust become moats as AI encroaches on the physical world.
+  sectors: [shared-layers]
+
+- title: "The Cerulean Thesis: Open Source AI for the Physical Economy"
+  url: https://ceruleanventures.substack.com/p/the-cerulean-thesis-open-source-ai
+  date: 2026-06-25
+  dek: Connecting the world of bits to atoms.
+  sectors: []
+
+- title: Mentoring Code for Climate NYC
+  url: https://ceruleanventures.substack.com/p/mentoring-code-for-climate-nyc
+  date: 2026-06-09
+  dek: Getting back to my roots after some free food for millionaires events.
+  sectors: []
+
+- title: The Fix for the Energy Crunch Today
+  url: https://ceruleanventures.substack.com/p/the-fix-for-the-energy-crunch-today
+  date: 2026-05-21
+  dek: Hyperscaler forecasts be damned; the power we need today is hiding in plain sight.
+  sectors: [energy]
+
+- title: How Natural Intelligence Empowers Farmers in Emerging Economies
+  url: https://ceruleanventures.substack.com/p/how-natural-intelligence-empowers
+  date: 2026-04-30
+  dek: Epoch and the blind spots in climate and supply-chain infrastructure.
+  sectors: [supply-chains]
+
+- title: Cerulean Ventures | Earth Day 2026
+  url: https://ceruleanventures.substack.com/p/cerulean-ventures-earth-day-2026
+  date: 2026-04-22
+  dek:
+  sectors: []
+
+- title: "Earth-Scale Problems, Earth-Scale Data: Cerulean's Bet on Planetary Intelligence"
+  url: https://ceruleanventures.substack.com/p/earth-scale-problems-earth-scale
+  date: 2026-04-02
+  dek: Cerulean invests in LGND.AI.
+  sectors: [shared-layers]
+
+- title: "Charting the Blue Frontier: How Data, AI, and Ambition Can Unlock the Ocean's Climate Solutions"
+  url: https://ceruleanventures.substack.com/p/charting-the-blue-frontier-how-data
+  date: 2025-09-19
+  dek: You have to be able to measure what you want to regenerate.
+  sectors: [oceans]
+
+- title: Unlocking the Grid for Renewable Energy with Piq Energy
+  url: https://ceruleanventures.substack.com/p/unlocking-the-grid-for-renewable-688
+  date: 2025-09-14
+  dek:
+  sectors: [energy]
+
+- title: Cerulean Network — It's Electric and Oceanic
+  url: https://ceruleanventures.substack.com/p/cerulean-network-its-electric-and
+  date: 2025-09-08
+  dek: What's new across the network and the VC portfolio.
+  sectors: []
+
+- title: This AI for Solar Platform, Popular Power, Is Driving the Renewable Energy Transition Globally
+  url: https://ceruleanventures.substack.com/p/this-ai-for-solar-platform-popular-3ab
+  date: 2025-09-08
+  dek:
+  sectors: [energy]
+
+- title: Cerulean's AI Earth Day
+  url: https://ceruleanventures.substack.com/p/ceruleans-ai-earth-day
+  date: 2025-05-05
+  dek: "Climate AI meets earth-scale action: insights from our Earth Day summit."
+  sectors: []
+
+- title: Financing Coffee Farms, Growing Equity
+  url: https://ceruleanventures.substack.com/p/financing-coffee-farms-growing-equity
+  date: 2025-03-04
+  dek: How a Cerulean fintech investment is changing the landscape for smallholder farmers.
+  sectors: [food-ag]
+
+- title: "The Obstacle Is the Way: How AI Is the Problem and (Part of) the Solution to Decarbonization"
+  url: https://ceruleanventures.substack.com/p/the-obstacle-is-the-way-how-ai-is
+  date: 2024-10-04
+  dek: Can distributed compute resources accelerate the energy transition?
+  sectors: [energy]
+
+- title: Payments for Ecosystem Services to Drive the Regenerative Transition — Investing in Epoch
+  url: https://ceruleanventures.substack.com/p/payments-for-ecosystem-services-benefits
+  date: 2024-05-29
+  dek: Our investment case for backing the Epoch team.
+  sectors: [supply-chains]
+
+- title: "How to Invest to Decarbonize the Economy: Supply-Side Decarbonization"
+  url: https://ceruleanventures.substack.com/p/how-to-invest-to-decarbonize-the
+  date: 2024-01-03
+  dek: What do nature and energy have in common?
+  sectors: []
+
+- title: Crypto Is Crucial to the Global Response to Climate Change
+  url: https://ceruleanventures.substack.com/p/crypto-is-crucial-to-the-global-response
+  date: 2023-06-28
+  dek: Regenerative finance leverages low-cost global coordination technology to make real change.
+  sectors: []

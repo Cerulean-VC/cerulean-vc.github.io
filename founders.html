@@ -1,0 +1,26 @@
+---
+layout: default
+title: For founders
+permalink: /founders/
+description: What Cerulean looks for at pre-seed, what to expect from us, and how to pitch.
+---
+<div class="page-head">
+  <h1 class="page-title">First money into industries that resist disruption.</h1>
+  <p class="lede">We're looking for crafty and scrappy founders who can find ways to stay alive in industries that have resisted startup disruption, as their systems ingest data and find business value in this new paradigm. Sometimes we're totally alone on the cap table with you. We like it that way.</p>
+</div>
+
+<div class="split">
+  <section aria-labelledby="expect">
+    <h2 id="expect">What to expect</h2>
+    <dl class="facts">
+      {%- for t in site.data.terms.detail %}
+      <div><dt>{{ t.label }}</dt><dd>{{ t.value }}</dd></div>
+      {%- endfor %}
+    </dl>
+  </section>
+  <section class="pitch" aria-labelledby="pitch-us">
+    <h2 id="pitch-us">Pitch us</h2>
+    <p>Tell us about the workflow you've won and the data it earns you. The form asks real questions. Every submission is read by one of us, not screened by a machine you can prompt.</p>
+    <a class="btn btn-lg" href="{{ site.founder_form }}">Submit your company</a>
+  </section>
+</div>

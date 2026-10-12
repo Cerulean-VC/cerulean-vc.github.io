@@ -1,0 +1,47 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+description: Essays and investment notes from Cerulean's partners.
+redirect_from:
+  - /articles/
+  - /articles/cerulean-ventures-blog/
+---
+<div class="page-head">
+  <h1 class="page-title">Writing</h1>
+  <p class="lede">Essays from the partners, published on Substack. <a class="link-arrow" href="{{ site.substack_url }}">Subscribe →</a></p>
+</div>
+
+{%- assign years = site.data.writing | group_by_exp: "w", "w.date | date: '%Y'" %}
+{%- for y in years %}
+<section class="year-group" aria-labelledby="year-{{ y.name }}">
+  <h2 class="year-label" id="year-{{ y.name }}">{{ y.name }}</h2>
+  {%- for w in y.items %}
+  <div class="entry">
+    <div class="entry-date">{{ w.date | date: "%b %-d" }}</div>
+    <div class="entry-main">
+      <a href="{{ w.url }}">{{ w.title | escape }}</a>
+      {%- if w.dek %}
+      <p>{{ w.dek }}</p>
+      {%- endif %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+{%- endfor %}
+
+<section class="section" aria-labelledby="notes">
+  <div class="section-head">
+    <h2 id="notes">Investment notes</h2>
+    <p>Why we backed each company, written when we invested.</p>
+  </div>
+  <div class="entry-list">
+    {%- assign notes = site.notes | sort: "date" | reverse %}
+    {%- for n in notes %}
+    <div class="entry">
+      <div class="entry-date">{{ n.date | date: "%b %-d, %Y" }}</div>
+      <div class="entry-main"><a href="{{ n.url | relative_url }}">{{ n.title | escape }}</a></div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

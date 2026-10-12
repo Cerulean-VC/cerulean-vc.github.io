@@ -1,0 +1,129 @@
+# Portfolio companies, in the order they appear on the portfolio page.
+#
+# id:            short name used in links
+# url:           company website (leave blank if unknown)
+# sectors:       ids from sectors.yml; each one is a pill on the portfolio page,
+#                and the company appears in that sector's row on the home page
+# blurb:         one line on what the company does
+# note:          file name of an investment note in _notes/ (without .md)
+# essay:         link to a Substack essay about the company
+# year, stage:   optional; shown on the portfolio page when filled in
+
+- id: lgnd
+  name: LGND
+  url: https://lgnd.ai
+  sectors: [oceans, shared-layers]
+  blurb: AI-native geospatial embeddings; the last-mile infrastructure that makes Earth observation useful inside real workflows.
+  essay: https://ceruleanventures.substack.com/p/earth-scale-problems-earth-scale
+
+- id: epoch
+  name: Epoch
+  url: https://epoch.blue
+  sectors: [supply-chains, oceans]
+  blurb: First-mile supply-chain intelligence, including watersheds and aquaculture. Selected as the technology platform for WWF's Codex Planetarius; 500M hectares under geospatial AI.
+  note: epoch
+
+- id: piq-energy
+  name: Piq Energy
+  url:
+  sectors: [energy]
+  blurb: AI on grid data for utilities, IPPs, and data centers. $2M ARR in ten months.
+  essay: https://ceruleanventures.substack.com/p/unlocking-the-grid-for-renewable-688
+
+- id: gazelle
+  name: Gazelle
+  url: https://gazelle.earth
+  sectors: [shared-layers]
+  blurb: Low-code spatial and environmental data workflows for project developers.
+
+- id: earthbanc
+  name: Earthbanc
+  url: https://earthbanc.io
+  sectors: [oceans, shared-layers]
+  blurb: Satellite-enabled dMRV across the climate-finance lifecycle, including mangroves. $0 → $25M ARR in four years; $80M AstraZeneca program.
+  note: earthbanc
+
+- id: abeya
+  name: Abeya
+  url:
+  sectors: [food-ag]
+  blurb: "Farmer-generated data through WhatsApp-first field workflows: regenerative procurement, EUDR, traceability."
+
+- id: meridia
+  name: Meridia
+  url: https://meridia.land
+  sectors: [food-ag]
+  blurb: Land-titling and parcel verification data for first-mile compliance.
+  note: meridia
+
+- id: commonshare
+  name: CommonShare
+  url: https://www.commonshare.com
+  sectors: [supply-chains]
+  blurb: "Collaborative traceability: shared claims rails for suppliers, certifiers, standards bodies, and retailers."
+  note: commonshare
+
+- id: elio
+  name: Elio
+  url:
+  sectors: [manufacturing]
+  blurb: AI-powered eco-design for pharma and manufacturing process design.
+  note: elio
+
+- id: treeconomy
+  name: Treeconomy
+  url:
+  sectors: [oceans, shared-layers]
+  blurb: Natural-capital data products for project development and diligence, including mangroves.
+
+- id: oneshot
+  name: OneShot
+  url:
+  sectors: [shared-layers]
+  blurb: Open methodologies and registry infrastructure for carbon markets.
+
+- id: renoster
+  name: Renoster
+  url:
+  sectors: [shared-layers]
+  blurb: Remote sensing, LiDAR, and open scientific rubrics for carbon transparency.
+  note: renoster
+
+- id: quantum-energy
+  name: Quantum Energy
+  url:
+  sectors: [energy]
+  blurb: Lifecycle-aware energy procurement and externality accounting.
+  note: quantum-energy
+
+- id: watt-carbon
+  name: Watt Carbon
+  url:
+  sectors: [energy]
+  blurb: Verified decarbonization assets.   # TODO: confirm
+
+- id: jasmine-energy
+  name: Jasmine Energy
+  url:
+  sectors: [energy]
+  blurb:   # TODO: one line on what Jasmine Energy does
+
+- id: ethichub
+  name: EthicHub
+  url: https://www.ethichub.com
+  sectors: [food-ag]
+  blurb: Financing platform for smallholder farmers.
+  note: ethichub
+
+- id: asoba
+  name: Asoba
+  url:
+  sectors: [energy]
+  blurb: Distributed energy for African markets.
+  note: asoba
+
+- id: silta
+  name: Silta
+  url:
+  sectors: []
+  blurb: Infrastructure-finance diligence rails.

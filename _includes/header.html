@@ -1,0 +1,11 @@
+<header class="site-header">
+  <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo.webp' | relative_url }}" alt="Cerulean Ventures" width="180" height="49"></a>
+  <nav class="site-nav" aria-label="Main">
+    {%- assign nav = "Thesis|/thesis/,Portfolio|/portfolio/,Writing|/writing/,Team|/team/" | split: "," -%}
+    {%- for item in nav -%}
+      {%- assign parts = item | split: "|" %}
+    <a href="{{ parts[1] | relative_url }}"{% if page.url == parts[1] or page.nav == parts[0] %} aria-current="page"{% endif %}>{{ parts[0] }}</a>
+    {%- endfor %}
+  </nav>
+  <a class="btn" href="{{ '/founders/' | relative_url }}"{% if page.url == '/founders/' %} aria-current="page"{% endif %}>Pitch us</a>
+</header>

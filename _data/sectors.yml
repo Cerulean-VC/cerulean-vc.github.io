@@ -1,0 +1,26 @@
+# The rows on the home page and the pills on the portfolio page, in display order.
+# A company joins a sector by listing the sector's id in companies.yml.
+
+- id: food-ag
+  name: Food & ag
+  description: Farm data, land records and smallholder finance
+
+- id: energy
+  name: Energy
+  description: Grid data, energy procurement and distributed power
+
+- id: supply-chains
+  name: Supply chains
+  description: First-mile intelligence and traceability
+
+- id: manufacturing
+  name: Manufacturing
+  description: Process design for pharma and industry
+
+- id: oceans
+  name: Oceans
+  description: Watersheds, aquaculture and mangroves
+
+- id: shared-layers
+  name: Shared layers
+  description: Maps, measurement and verification used across every sector

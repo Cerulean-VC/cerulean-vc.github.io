@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{%- assign repo = site.github.repository_nwo | default: site.github_repo -%}
+<article>
+  <div class="page-head">
+    <p class="stamp">Thesis v{{ page.version }}, {{ page.version_date }}. <a href="https://github.com/{{ repo }}/commits/main/{{ page.path }}">See what changed</a>.</p>
+    <h1 class="thesis-line thesis-title">{{ page.title }}</h1>
+    <p class="lede">{{ page.lede }}</p>
+  </div>
+  <div class="prose">
+{{ content }}
+  </div>
+  <section class="revisions" aria-labelledby="revisions">
+    <h2 id="revisions">Revisions</h2>
+    <ol>
+      {%- for r in page.revisions %}
+      <li><span class="rev">v{{ r.version }} · {{ r.date }}</span><span class="rev-text">{{ r.summary }}</span></li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- if page.further %}
+  <section class="further" aria-labelledby="further">
+    <h2 id="further">The long version</h2>
+    <ul>
+      {%- for f in page.further %}
+      <li><a href="{{ f.url }}">{{ f.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</article>

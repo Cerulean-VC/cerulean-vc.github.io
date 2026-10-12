@@ -1,0 +1,46 @@
+---
+layout: default
+title: Team
+permalink: /team/
+description: Cerulean's partners and advisory board.
+---
+<div class="page-head">
+  <h1 class="page-title">Team</h1>
+  <p class="lede">Two founders turned GPs. We built and exited AI companies before backing them.</p>
+</div>
+
+<section class="partners" aria-label="Partners">
+  {%- for p in site.data.team.partners %}
+  <article class="partner">
+    <img src="{{ '/assets/img/team/' | append: p.photo | relative_url }}" alt="{{ p.name }}" width="120" height="120" loading="lazy">
+    <h2>{{ p.name }}</h2>
+    <div class="role">{{ p.title }}</div>
+    {%- for b in p.bio %}
+    <p class="bio">{{ b }}</p>
+    {%- endfor %}
+    <a class="small-link" href="{{ p.linkedin }}">LinkedIn →</a>
+  </article>
+  {%- endfor %}
+</section>
+
+<section class="section" aria-labelledby="advisors">
+  <div class="section-head"><h2 id="advisors">Advisory board</h2></div>
+  <div class="advisors">
+    {%- for a in site.data.team.advisors %}
+    <div class="advisor">
+      <img src="{{ '/assets/img/team/' | append: a.photo | relative_url }}" alt="{{ a.name }}" width="72" height="72" loading="lazy">
+      <h3>{{ a.name }}</h3>
+      <div class="role">{{ a.role }}</div>
+      <div class="focus">{{ a.focus }}</div>
+      <a class="small-link" href="{{ a.linkedin }}">LinkedIn →</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="how-we-work">
+  <div class="section-head"><h2 id="how-we-work">How we work</h2></div>
+  <div class="prose">
+    <p>Cerulean is a two-GP firm with no platform team — we built one instead. Scout, our in-house agentic operating system, runs on the firm's own context: it prepares our meetings, drafts our letters, watches our pipeline, and learns from every correction. Partner-led and taste-driven, with machine leverage where it compounds. We invest in founders making the physical world legible to machines because we run our own firm the same way.</p>
+  </div>
+</section>

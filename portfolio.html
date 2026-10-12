@@ -1,0 +1,61 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+description: The companies Cerulean has backed and what each one does.
+redirect_from:
+  - /portfolio/cerulean-ventures-blog/
+---
+<div class="page-head">
+  <h1 class="page-title">Portfolio</h1>
+  <p class="lede">Companies we've backed.</p>
+  {%- comment %} The filter needs JavaScript, so it stays hidden until the script below runs. {% endcomment %}
+  <nav class="filters" aria-label="Filter by area" hidden>
+    <a class="pill" href="#all" data-area="all" data-name="All" aria-current="true">All <span class="count">{{ site.data.companies.size }}</span></a>
+    {%- for s in site.data.sectors %}
+    {%- assign n = site.data.companies | where_exp: "c", "c.sectors contains s.id" | size %}
+    <a class="pill" href="#{{ s.id }}" data-area="{{ s.id }}" data-name="{{ s.name | escape }}">{{ s.name | escape }} <span class="count">{{ n }}</span></a>
+    {%- endfor %}
+  </nav>
+  <p id="filter-status" class="sr-only" aria-live="polite"></p>
+</div>
+
+<div class="company-list">
+  {%- for c in site.data.companies %}
+  {% include company.html company=c %}
+  {%- endfor %}
+</div>
+
+<script>
+  // Filter the list by area. The area lives in the address (#energy), so links from the home page can open a filtered list.
+  (function () {
+    var bar = document.querySelector(".filters");
+    var rows = [].slice.call(document.querySelectorAll(".company"));
+    var status = document.getElementById("filter-status");
+    var names = {};
+    [].forEach.call(bar.querySelectorAll("[data-area]"), function (a) { names[a.dataset.area] = a.dataset.name; });
+
+    function show(announce) {
+      var id = location.hash.slice(1);
+      var area = id !== "all" && names[id] ? id : "";
+      var count = 0;
+      rows.forEach(function (row) {
+        var match = !area || row.dataset.areas.split(" ").indexOf(area) > -1;
+        row.hidden = !match;
+        if (match) count++;
+      });
+      [].forEach.call(bar.querySelectorAll("[data-area]"), function (a) {
+        if (a.dataset.area === (area || "all")) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+      if (announce) status.textContent = count + (count === 1 ? " company" : " companies") + (area ? " in " + names[area] : "");
+    }
+
+    bar.hidden = false;
+    show(false);
+    window.addEventListener("hashchange", function () {
+      show(true);
+      if (names[location.hash.slice(1)] && bar.getBoundingClientRect().top < 0) bar.scrollIntoView();
+    });
+  })();
+</script>

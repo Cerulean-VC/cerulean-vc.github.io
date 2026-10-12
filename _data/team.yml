@@ -1,0 +1,46 @@
+partners:
+  - name: Jahed Momand
+    title: Co-founder and General Partner
+    photo: jahed-momand.webp
+    linkedin: https://www.linkedin.com/in/jahedmomand/
+    bio:
+      - Recovering biophysicist. Co-founded Magalix, where he applied machine learning to Kubernetes operations, open-sourced the product, grew it to 25,000 developers, and sold the company to Weaveworks. Building a complement company on an open ecosystem is the strategy Cerulean now underwrites across the physical economy.
+      - He leads the firm's thesis work and writing — The End of Externalities, the open-source strategy essays, and the fund's investment notes — and he built Scout, the agentic operating system the firm runs on daily. Based in Barcelona; invests globally.
+
+  - name: Matthew Stotts
+    title: Co-founder and General Partner
+    photo: matthew-stotts.webp
+    linkedin: https://www.linkedin.com/in/matthewstotts/
+    bio:
+      - "[Matthew's bio: 3–4 sentences on his operating history, sectors and role in the partnership.]"
+
+advisors:
+  - name: Dr. Julie Pullen
+    role: Chief Scientist and Partner, Propeller
+    focus: Ocean and climate science
+    photo: julie-pullen.webp
+    linkedin: https://www.linkedin.com/in/julie-pullen/
+
+  - name: Peter Olivier
+    role: Head of New Markets, UNDO Carbon
+    focus: Carbon markets
+    photo: peter-olivier.webp
+    linkedin: https://www.linkedin.com/in/peteredwardolivier/
+
+  - name: Chadwick Manning
+    role: Founder, Eletriq Power
+    focus: Renewable energy
+    photo: chadwick-manning.webp
+    linkedin: https://www.linkedin.com/in/chadwickmanning/
+
+  - name: Dr. John Clippinger
+    role: Founder, ClearTrace
+    focus: AI and nature finance
+    photo: john-clippinger.webp
+    linkedin: https://www.linkedin.com/in/john-henry-clippinger-5ab1b/
+
+  - name: Dr. Troy Cross
+    role: Professor of Philosophy, Reed College
+    focus: Bitcoin decarbonization
+    photo: troy-cross.webp
+    linkedin: https://www.linkedin.com/in/troy-cross-88315818/

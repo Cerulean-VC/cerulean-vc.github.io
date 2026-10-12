@@ -1,0 +1,25 @@
+# The short version sits on the home page. The full version sits on the founders page.
+
+summary:
+  - label: Stage
+    value: Pre-seed
+  - label: First check
+    value: $500–750k
+  - label: Geography
+    value: Global
+  - label: Decisions
+    value: Two partners
+
+detail:
+  - label: Stage
+    value: Pre-seed, idea to prototype
+  - label: First check
+    value: $500–750k
+  - label: Lead
+    value: Sometimes, including rounds where we're the only check
+  - label: Decisions
+    value: Two partners decide, fast, with no committee
+  - label: Sectors
+    value: Food & ag, energy, supply chains, manufacturing and oceans
+  - label: Geography
+    value: Global

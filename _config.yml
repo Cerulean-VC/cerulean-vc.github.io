@@ -1,0 +1,50 @@
+# Cerulean Ventures — cerulean.vc
+# Builds on GitHub Pages with the default Jekyll build. See README.md.
+
+title: Cerulean Ventures
+description: Cerulean is a pre-seed venture capital firm backing founders globally who are applying AI to drive systemic change for people and planet.
+lang: en
+logo: /assets/img/logo.png
+image: /assets/img/og.png
+
+# Leave url and baseurl unset. GitHub Pages fills them in for you,
+# and switches to https://cerulean.vc once the custom domain is set.
+
+# Used for the thesis "see what changed" link when building outside GitHub Pages.
+# GitHub Pages fills this in automatically from the repository.
+github_repo: OWNER/REPO
+
+substack_url: https://ceruleanventures.substack.com
+linkedin_url: https://www.linkedin.com/company/cerulean-ventures
+founder_form: https://ceruleanvc.typeform.com/to/CKUox35J
+investor_form: https://ceruleanvc.typeform.com/to/IbuCqVOw
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      nav: Writing
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github

@@ -1,0 +1,27 @@
+{%- assign c = include.company -%}
+<article class="company" id="{{ c.id }}" data-areas="{{ c.sectors | join: ' ' }}">
+  <div class="company-id">
+    <h2 class="company-name">{% if c.url %}<a href="{{ c.url }}">{{ c.name | escape }}</a>{% else %}{{ c.name | escape }}{% endif %}</h2>
+    {%- if c.stage or c.year %}
+    <div class="company-facts">{{ c.stage }}{% if c.stage and c.year %} · {% endif %}{{ c.year }}</div>
+    {%- endif %}
+    {%- if c.sectors.size > 0 %}
+    <ul class="pills" aria-label="Areas">
+      {%- for s in site.data.sectors %}{% if c.sectors contains s.id %}
+      <li><a class="pill" href="#{{ s.id }}" data-area="{{ s.id }}">{{ s.name | escape }}</a></li>
+      {%- endif %}{% endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+  <div class="company-body">
+    {%- if c.blurb %}
+    <p>{{ c.blurb }}</p>
+    {%- endif %}
+    {%- if c.note or c.essay %}
+    <div class="company-links">
+      {%- if c.note %}<a href="{{ '/notes/' | append: c.note | append: '/' | relative_url }}">Investment note</a>{% endif -%}
+      {%- if c.essay %}<a href="{{ c.essay }}">Essay on Substack</a>{% endif -%}
+    </div>
+    {%- endif %}
+  </div>
+</article>

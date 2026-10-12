@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign company = site.data.companies | where: "id", page.company | first -%}
+<article>
+  <div class="page-head">
+    <p class="stamp">Investment note · {{ page.date | date: "%b %-d, %Y" }} · {{ page.author }}</p>
+    <h1 class="page-title note-title">{{ page.title }}</h1>
+  </div>
+  <div class="prose">
+{{ content }}
+  </div>
+  <p class="back">
+    {%- if company %}<a href="{{ '/portfolio/' | relative_url }}#{{ company.id }}">← {{ company.name | escape }} in our portfolio</a>{% else %}<a href="{{ '/portfolio/' | relative_url }}">← Portfolio</a>{% endif -%}
+  </p>
+</article>
