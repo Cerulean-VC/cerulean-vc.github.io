@@ -7,8 +7,13 @@ lang: en
 logo: /assets/img/logo.png
 image: /assets/img/og.png
 
-# Leave url and baseurl unset. GitHub Pages fills them in for you,
-# and switches to https://cerulean.vc once the custom domain is set.
+url: https://cerulean.vc
+tagline: Pre-seed VC for AI in the physical economy
+social:
+  name: Cerulean Ventures
+  links:
+    - https://www.linkedin.com/company/cerulean-ventures
+    - https://ceruleanventures.substack.com
 
 # Used for the thesis "see what changed" link when building outside GitHub Pages.
 # GitHub Pages fills this in automatically from the repository.
@@ -30,6 +35,10 @@ collections:
     permalink: /notes/:name/
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og.png
   - scope:
       path: ""
       type: notes
