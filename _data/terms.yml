@@ -4,11 +4,9 @@ summary:
   - label: Stage
     value: Pre-seed
   - label: First check
-    value: $500–750k
+    value: $500k–750k
   - label: Geography
     value: Global
-  - label: Decisions
-    value: Two partners
 
 detail:
   - label: Stage
