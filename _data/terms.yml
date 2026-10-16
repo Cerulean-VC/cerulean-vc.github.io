@@ -14,11 +14,9 @@ detail:
   - label: Stage
     value: Pre-seed, idea to prototype
   - label: First check
-    value: $500–750k
+    value: $500k–750k
   - label: Lead
-    value: Sometimes, including rounds where we're the only check
-  - label: Decisions
-    value: Two partners decide, fast, with no committee
+    value: Frequently, co-lead sometimes.
   - label: Sectors
     value: Food & ag, energy, supply chains, manufacturing and oceans
   - label: Geography
